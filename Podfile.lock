@@ -1,0 +1,62 @@
+PODS:
+  - Alamofire (4.8.2)
+  - CocoaLumberjack (3.5.3):
+    - CocoaLumberjack/Core (= 3.5.3)
+  - CocoaLumberjack/Core (3.5.3)
+  - DZNEmptyDataSet (1.8.1)
+  - LBTATools (1.0.6)
+  - Moya (12.0.1):
+    - Moya/Core (= 12.0.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - Realm (3.16.2):
+    - Realm/Headers (= 3.16.2)
+  - Realm/Headers (3.16.2)
+  - RealmSwift (3.16.2):
+    - Realm (= 3.16.2)
+  - Result (4.1.0)
+  - SDWebImage/Core (5.0.6)
+  - SDWebImageSVGCoder (0.3.0):
+    - SDWebImage/Core (~> 5.0)
+    - SVGKit (>= 2.1)
+  - SVGKit (2.1.1):
+    - CocoaLumberjack (~> 3.0)
+
+DEPENDENCIES:
+  - DZNEmptyDataSet
+  - LBTATools
+  - Moya (~> 12.0)
+  - RealmSwift
+  - SDWebImageSVGCoder
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CocoaLumberjack
+    - DZNEmptyDataSet
+    - LBTATools
+    - Moya
+    - Realm
+    - RealmSwift
+    - Result
+    - SDWebImage
+    - SDWebImageSVGCoder
+    - SVGKit
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CocoaLumberjack: 2f44e60eb91c176d471fdba43b9e3eae6a721947
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  LBTATools: ab52bd47d7e4e31eff1bdf72f4d92829a7d029e1
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  Realm: 0e73b4edeb5b6a90da3d83206883b2e34e00eb38
+  RealmSwift: a81e650171ef0a5f999df1ed8d39ba8d6fce88a4
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  SDWebImageSVGCoder: 4b354bcdc7d74ce14d9fdb3c9ed9ab2c667f3b57
+  SVGKit: 652cdf7bef8bec8564d04a8511d3ab50c7595fac
+
+PODFILE CHECKSUM: c2fef2c034072848f3d2e3767d96d6e2b76be02c
+
+COCOAPODS: 1.6.1
