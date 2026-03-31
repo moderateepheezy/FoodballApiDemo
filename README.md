@@ -26,4 +26,9 @@
    - Choose a simulator or device in Xcode.
    - Press `Cmd + R` or click the play button to build and run the app.
 
+## TODOs
+
+- [ ] Set up Continuous Integration (CI).
+- [ ] Ensure app readiness for submission to the App Store.
+
 For more details, visit the Jira ticket: [SCRUM-1](https://simpumindapps.atlassian.net/browse/SCRUM-1)
