@@ -1,12 +1,11 @@
-//
 //  CustomViewController.swift
 //  SterlingBank Interview
 //
 //  Created by Afees Lawal on 6/25/19.
 //  Copyright © 2019 Afees Lawal. All rights reserved.
-//
 
 import UIKit
+import SwiftUI
 
 /// A UIViewController that loads a custom UIView as its .view
 /// the typed view can be accessed via the .customView property
@@ -33,6 +32,19 @@ class CustomViewController<ViewType: UIView, ViewModelType>: UIViewController {
     }
     override func loadView() {
         self.view = ViewType(frame: UIScreen.main.bounds)
+        // Setup for SwiftUI integration can be added here if necessary
+        let swiftUIView = YourSwiftUIView() // Replace with your actual SwiftUI View
+        let hostingController = UIHostingController(rootView: swiftUIView)
+        hostingController.view.frame = self.view.bounds
+        addChild(hostingController)
+        self.view.addSubview(hostingController.view)
+        hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            hostingController.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            hostingController.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
+            hostingController.view.topAnchor.constraint(equalTo: self.view.topAnchor),
+            hostingController.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+        ])
+        hostingController.didMove(toParent: self)
     }
 }
-
